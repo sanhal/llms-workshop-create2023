@@ -1,59 +1,65 @@
-<h1>Verify Setup</h1>
+<body>
+<h1>llms-workshop create2023</h1>
+<h2>Verify Access</h2>
 
 <div id="1" class="card"><br>
-    <h4> &nbsp; &nbsp; 1. Can you login to <a href="https://genesys-cloud.okta.com">https://genesys-cloud.okta.com/</a></h4>
+    <h4>   1. Can you login to <a href="https://genesys-cloud.okta.com">https://genesys-cloud.okta.com/</a></h4>
     <br>
     <br>
- &nbsp; &nbsp; &nbsp   <a href="#2" onclick="jshighlight('2')"> Yes </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#poe" onclick="jshighlight('poe')">No</a>
+   &nbsp;   <a href="#2" onclick="jshighlight('2')">Yes</a>&nbsp;&nbsp;&nbsp;&nbsp;  <a href="#poe" onclick="jshighlight('poe')">No</a>
     
-<br><br></div><br><br><hr><br><br>
+<br><br></div><br><br><br><br>
 
 <div id="2" class="card"><br>
-    <h4> &nbsp; &nbsp; &nbsp;2. Do you have access to AWS SSO in genesys-cloud.okta </h4>
+    <h4>   2. Do you have access to AWS SSO in genesys-cloud.okta </h4>
     <img src="img/prompt_engineering_01.png">
     <br>
     <br>
-&nbsp; &nbsp; &nbsp    <a href="#3" onclick="jshighlight('3')"> Yes </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#poe" onclick="jshighlight('poe')">No</a>
-<br><br></div><br><br><hr><br><br>
+  &nbsp    <a href="#3" onclick="jshighlight('3')">Yes</a>&nbsp;&nbsp;&nbsp;&nbsp;  <a href="#poe" onclick="jshighlight('poe')">No</a>
+<br><br></div><br><br><br><br>
 
 
 <div id="3" class="card"><br>
-    <h4> &nbsp; &nbsp; &nbsp;3. Can you see <u><i>dev-ai</i> </u> in <a href="https://d-90677ec9ff.awsapps.com/start#/">AWS SSO</a></h4>
+    <h4>   3. Can you see <u><i>dev-ai</i> </u> in <a href="https://d-90677ec9ff.awsapps.com/start#/">AWS SSO</a></h4>
     <img src="img/prompt_engineering_02.png">
     <br>
     <br>
- &nbsp; &nbsp; &nbsp   <a href="#4" onclick="jshighlight('4')"> Yes  </a> - then click on Management console &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#poe" onclick="jshighlight('poe')">No</a>
-<br><br></div><br><br><hr><br><br>
+   &nbsp   <a href="#4" onclick="jshighlight('4')">Yes</a> - then click on Management console  &nbsp;&nbsp;&nbsp;&nbsp;<a href="#poe" onclick="jshighlight('poe')">No</a>
+<br><br></div><br><br><br><br>
 
 
 
 <div id="4" class="card"><br>
-    <h4> &nbsp; &nbsp; &nbsp;4. Can you access <a href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/">Bedrock UI</a></h4>
+    <h4>   4. Can you access <a href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/">Bedrock UI</a></h4>
     <img src="img/verifysetup_01.png" height="350" width="1000">
     <br>
     <br>
-&nbsp; &nbsp; &nbsp    <b> Yes  </b> - then click on Get Started. You are all set. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#poe" onclick="jshighlight('poe')">No</a>
-<br><br></div><br><br><hr><br><br>
+  &nbsp    <b> Yes  </b> - then click on Get Started. You are all set. &nbsp;&nbsp;&nbsp;&nbsp; <a href="#poe" onclick="jshighlight('poe')">No</a>
+<br><br></div><br><br><br><br>
 
 
 <div id="poe" class="card"><br>
-    <h4> &nbsp; &nbsp; &nbsp;You can still try the prompts in our workshop using  <a href="https://poe.com">poe.com</a> instead of Bedrock</h4>
-    &nbsp; &nbsp; &nbsp You will need to signup to poe.<br>
- &nbsp; &nbsp; &nbsp   You will be able to try most of the things in workshop.<br>
- &nbsp; &nbsp; &nbsp   You can try full workshop exercise later by following <a href="https://ai-docs-internal.inindca.com/llms-create2023">llms-create2023</a>
+    <h4>   You can still try the prompts in our workshop using  <a href="https://poe.com">poe.com</a> instead of Bedrock</h4>
+    You will need to signup to poe.<br>
+    You will be able to try most of the things in workshop.<br>
+    You can try full workshop exercise later by following <a href="https://ai-docs-internal.inindca.com/llms-create2023">llms-create2023</a>
 
-    &nbsp; &nbsp;<br>
+     <br>
     <mark> It is a chat widget. So it will keep track of the conversation. If you want to start fresh create a new bot.</mark>
 
-<br><br></div><br><br><hr><br><br>
-
+<br><br></div><br><br><br><br>
+</body>
 
 <style>
+    body {
+        background-color: aliceblue;
+    }
     .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
   transition: 0.3s;
         margin-left: 10px;
+        padding: 2px 16px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -68,8 +74,6 @@
 </style>
 
 <script>
-    document.getElementById("1").style.backgroundColor="coral";
-    document.getElementById("1").style.boxShadow="0 8px 16px 0 rgba(0,0,0,0.8)";
 
     function jshighlight(divid){
         const divids = ["1", "2", "3", "4","poe"];
@@ -82,6 +86,7 @@
         document.getElementById(divid).style.boxShadow="0 8px 16px 0 rgba(0,0,0,0.8)";
 
     }
+    jshighlight("1")
 </script>
 
 
